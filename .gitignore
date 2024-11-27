@@ -1,0 +1,5 @@
+*.out
+solution
+my*.ans
+my-*.txt
+.vscode

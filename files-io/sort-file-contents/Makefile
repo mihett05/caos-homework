@@ -2,8 +2,8 @@ CC=gcc -std=c11 -g
 
 all: solution
 
-solution: solution.c
-	$(CC) -o solution solution.c
+solution: solution.c chunks.c chunks.h errors.c errors.h heap.c heap.h merge.c merge.h
+	$(CC) -o solution solution.c chunks.c chunks.h errors.c errors.h heap.c heap.h merge.c merge.h
 
 test: solution
 	for i in `seq 1 6`; do \

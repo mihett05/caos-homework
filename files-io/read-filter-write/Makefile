@@ -2,8 +2,8 @@ CC=gcc -std=c11 -g
 
 all: solution
 
-solution: solution.c
-	$(CC) -o solution solution.c
+solution: solution.c filter.c filter.h
+	$(CC) -o solution solution.c filter.c
 
 test: solution
 	for i in `seq 1 3`; do \
