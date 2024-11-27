@@ -17,7 +17,10 @@ int main() {
 
   // close(buffer_fd);
 
-  execlp("tac", "tac", (char*)NULL);
+  char* const* argv = {"tac", (char* const*)NULL};
+  char* const* envp = {(char* const*)NULL};
+
+  execve("/usr/bin/tac", argv, envp);
 
   return 0;
 }
