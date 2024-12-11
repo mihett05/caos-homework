@@ -2,8 +2,8 @@ CC=gcc -std=c11 -g
 
 all: solution
 
-solution: solution.c
-	$(CC) -o solution solution.c
+solution: solution.c scanf.c
+	$(CC) -o solution solution.c scanf.c
 
 test: solution
 	for i in `seq 1 4`; do \

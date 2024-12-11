@@ -17,7 +17,7 @@ _start:
 
 .data
 tac:
-    .asciz "tac"
+    .asciz "/usr/bin/tac"
 argv:
     .quad tac
     .quad 0
